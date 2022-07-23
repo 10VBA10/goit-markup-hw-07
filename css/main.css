@@ -1,0 +1,13 @@
+body {
+  background-color: tomato;
+}
+
+.btn {
+  border-radius: 2px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}/*# sourceMappingURL=main.css.map */
