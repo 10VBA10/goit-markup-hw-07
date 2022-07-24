@@ -149,7 +149,7 @@ address {
 .nav__list .nav__item + .nav__item {
   margin-left: 50px;
 }
-.nav__list .link {
+.nav__list .nav__link {
   /* втсановлюэмо силкам падінги, щоб користувач по ним попадав */
   display: block;
   padding-top: 32px;
@@ -163,17 +163,17 @@ address {
 
   transition: color var(--transition-time-hover) var(--transition-cubic);
 }
-.nav__list .link:hover,
-.nav__list .link:focus {
+.nav__list .nav__link:hover,
+.nav__list .nav__link:focus {
   color: var(--accent-color);
 }
-.nav__list .link.current {
+.nav__list .nav__link--current {
   color: var(--accent-color);
 }
 .nav__item {
   position: relative;
 }
-.current::after {
+.nav__link--current::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -191,16 +191,16 @@ address {
   margin-left: auto;
   align-items: center;
 }
-.contacts .nav__item + .nav__item {
+.contacts .contacts__item + .contacts__item{
   margin-left: 50px;
 }
-.mail-svg,
-.smartphone-svg {
+.contacts__mail--svg,
+.contacts__smartphone--svg {
   text-align: baseline;
   margin-right: 10px;
   fill: currentColor;
 }
-.contacts .contacts-link {
+.contacts .contacts__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -213,8 +213,8 @@ address {
 
   transition: color var(--transition-time-hover) var(--transition-cubic), text-shadow var(--transition-time-hover) var(--transition-cubic);
 }
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
